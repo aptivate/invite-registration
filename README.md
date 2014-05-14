@@ -20,3 +20,5 @@ After you have added app's code somewhere where Python can find it, you need to 
 3. Also set ``LOGIN_REDIRECT_URL``
 4. Set ``EMAIL_BOT_ADDRESS`` (sender of emails), ``SITE_NAME`` (website's name) and ``SITE_HOSTNAME`` (domain where it is hosted including port number when it is not 80)
 5. Make sure that ``TEMPLATE_CONTEXT_PROCESSORS`` also include ``messages`` processor
+
+You will likely want to change email templates. Override them as you would any other Django template, but make sure that template code building links matches those of existing templates exactly.
